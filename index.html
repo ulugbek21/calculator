@@ -31,31 +31,33 @@
         <input type="button" value="C" onclick="result.value=''" id="clear-button" />
       </div>
       <div class="second-row">
-        <input type="button" value="1"/>
-        <input type="button" value="2"/>
-        <input type="button" value="3"/>
-        <input type="button" value="+"/>
+        <input type="button" value="1" onclick="operate('1')"/>
+        <input type="button" value="2" onclick="operate('2')" />
+        <input type="button" value="3" />
+        <input type="button" value="+" onclick="operate('+')" />
       </div>
       <div class="third-row">
-        <input type="button" value="4"/>
-        <input type="button" value="5"/>
-        <input type="button" value="6"/>
-        <input type="button" value="-"/>
+        <input type="button" value="4" />
+        <input type="button" value="5" />
+        <input type="button" value="6" />
+        <input type="button" value="-" />
       </div>
       <div class="fourth-row">
-        <input type="button" value="7"/>
-        <input type="button" value="8"/>
-        <input type="button" value="9"/>
-        <input type="button" value="x"/>
+        <input type="button" value="7" />
+        <input type="button" value="8" />
+        <input type="button" value="9" />
+        <input type="button" value="x" />
       </div>
       <div class="fifth-row">
-        <input type="button" value="/"/>
-        <input type="button" value="0"/>
-        <input type="button" value="."/>
-        <input type="button" value="="/>
+        <input type="button" value="/" />
+        <input type="button" value="0" />
+        <input type="button" value="." />
+        <input type="button" value="=" onclick="calculate(result.value)" />
       </div>
     </div>
   </div>
+
+  <script src="scripts/main.js"></script>
 </body>
 
 </html>
